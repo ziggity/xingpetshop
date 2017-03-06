@@ -1,9 +1,25 @@
 h2 {
 color:red;
+text-align: center;
 }
 div{
 
   font-style: italic;
   color: black;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
+}
+td{
+  width: 500px;
+  height: 500px;
+  border: black 3px solid;
+  margin-left: 10px;
+}
+table {
+  margin-bottom: 30px;
+}
+
+span {
+  position: relative;
+  margin-left: 40%;
+  margin-top: 140%;
 }

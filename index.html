@@ -17,15 +17,6 @@
        <div class="userOrder">
          <form id="formInput1">
            <div class="row">
-             <div class="col-md-4">
-               <h4 class="well">Dog's for adoption<br><em> Staff pick: Scruffy!!</em></h4>
-               <div class="form-group">
-               <select id="dogAdoption1" class="dogAdoption1" name="dogAdoption1" type="text">
-                 <option value="bonding">Request 15 min bonding session</option>
-                 <option value="dogMeeting">Schedule a 15 min pet meeting with your home pet to see if this animal is a good fit</option>
-                 <option value="adopt">Adopt immediately!</option>
-               </select>
-               </div>
                <h4 class="well">Pets I'd like to put up for adoption</h4>
                <div class="form-group">
                <select id="dogAdoption2" class="dogAdoption2" name="dogAdoption2" type="text">
@@ -37,20 +28,45 @@
                <div>
                  <br>
                  Name of pet:<br>
-                <input id="name" type="text" name="name" value="Name">
+                <input id="name" type="text" name="name" placeholder="Name">
                 <br>
                 Color:<br>
-                <input id="color" type="text">
+                <input id="color" type="text" placeholder="Color">
                 <br>
                 Age of pet:<br>
-                <input id="age" type="number" name="age">
+                <input id="age" type="number" placeholder="Age">
                 <input type="submit" value="Submit">
             </form>
        </div>
      </div>
+     <h1>New Pets available for adoption!</h1>
+     <div class="container">
+       <table>
+         <tr>
+             <td><span id="t1" class="btn bg-primary">Adopt</span></td>
+             <td><span id="t2" class="btn bg-primary">Adopt</span></td>
+             <td><span id="t3" class="btn bg-primary">Adopt</span></td>
+         </tr>
+       </table>
+
+       <div>
+         <h1>Adopted pets!!</h1>
+         <table>
+         <tr>
+             <td id="t4"></td>
+             <td id="t5"></td>
+             <td id="t6"></td>
+         </tr>
+         </table>
+       </div>
+          </div>
            <div class="col-md-8"  style="text-align:center;">
              <button type="submit" name="adopt" class="btn well" id="adopt" value="finishOrder">Click here to adopt your new pet!</button>
            </div>
          </form>
+
+         <div class="adoptionOutput">
+
+         </div>
   </body>
 </html>
