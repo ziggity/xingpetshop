@@ -1,8 +1,8 @@
-function Pet(animalType, name, age, color){
-  this.animalType = animalType;
-  this.name = name;
-  this.age = age;
+function Pet(petType, name, age, color){
+  this.petType = petType;
+  this.nm = name;
   this.color = color;
+  this.age = age;
 };
 
 
@@ -20,22 +20,22 @@ $(document).ready(function(){
     console.log(petColor)
     var petAge = parseInt($("#age").val());
     console.log(petAge)
+    var url = $("#image").val();
 
-  if(petType === "Cat"){
-    var cat = new Pet (petType, petName, petAge, petAge);
-    console.log(cat.name);
-    console.log("here")
-  } else if (petType==="Dog"){
-    var dog = new Pet (petType, petName, petAge, petAge);
-    console.log(dog);
+    var cat = new Pet (petType, petName, petAge, petColor);
+    var dog = new Pet (petType, petName, petAge, petColor);
+    var pig = new Pet (petType, petName, petAge, petColor);
+
+  if(petType === "Dog"){
+    $("#t1").prepend('<ul><li>Name: ' + cat.nm + '</li><li>Age: ' + cat.age + '</li><li>Color: ' + cat.color + '</li><img src="' + url + '"></li>');
+  } else if (petType==="Cat"){
+    $("#t2").prepend('<ul><li>Name: ' + dog.nm + '</li><li>Age: ' + dog.age + '</li><li>Color: ' + dog.color + '</li><img src="' + url + '"></li>');
   } else if (petType==="Pig"){
-    var pig = new Pet (petType, petName, petAge, petAge);
-    console.log(pig);
+    $("#t3").prepend('<ul><li>Name: ' + pig.nm + '</li><li>Age: ' + pig.age + '</li><li>Color: ' + pig.color + '</li><img src="' + url + '"></li>');
   };
 
-    $("#t1").append('<ul><li>Name: ' + cat.name + '</li><li>Age: ' + cat.age + '</li><li>Color: ' + cat.color + '</li>');
-    $("#t2").append('<ul><li>Name: ' + dog.name + '</li><li>Age: ' + dog.age + '</li><li>Color: ' + dog.color + '</li>');
-    $("#t3").append('<ul><li>Name: ' + pig.name + '</li><li>Age: ' + pig.age + '</li><li>Color: ' + pig.color + '</li>');
+
+
 
 
 
