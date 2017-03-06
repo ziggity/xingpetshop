@@ -34,16 +34,23 @@ $(document).ready(function(){
     $("#t3").prepend('<ul><li>Name: ' + pig.nm + '</li><li>Age: ' + pig.age + '</li><li>Color: ' + pig.color + '</li><img src="' + url + '"></li>');
   };
 
+  $("#adopt1").click(function(event){
+    event.preventDefault();
+      $("#t1").empty();
+      $("#t4").append('<ul><li>Name: ' + dog.nm + '</li><li>Age: ' + dog.age + '</li><li>Color: ' + dog.color + '</li><img src="' + url + '"></li>');
+  });
+  $("#adopt2").click(function(event){
+    event.preventDefault();
+    $("#t2").empty();
+    $("#t5").append('<ul><li>Name: ' + cat.nm + '</li><li>Age: ' + cat.age + '</li><li>Color: ' + cat.color + '</li><img src="' + url + '"></li>');
+  });
+  $("#adopt3").click(function(event){
+    event.preventDefault();
+    $("#t3").empty();
+    $("#t6").append('<ul><li>Name: ' + pig.nm + '</li><li>Age: ' + pig.age + '</li><li>Color: ' + pig.color + '</li><img src="' + url + '"></li>');
+  });
 
 
 
-
-
-
-
-
-
-
-
-  })
-})
+  });
+});
